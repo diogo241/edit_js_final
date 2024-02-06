@@ -1,0 +1,186 @@
+/*
+// Breadcrumbs
+*/
+.product__breadcrumbs-wrapper {
+  gap: 0.2rem;
+}
+.product__breadcrumb {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: $dark;
+  &--link {
+    font-weight: 700;
+  }
+  &--link:hover {
+    color: $dark--light;
+  }
+}
+/*
+// Product
+*/
+.product__wrapper {
+  width: 100%;
+}
+.product__img-wrapper {
+  position: relative;
+  width: 100%;
+}
+.product__img-container {
+  height: 450px;
+}
+.product__img {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  z-index: 5;
+  transition: 1s ease-in-out all;
+  opacity: 1;
+  &:hover {
+    opacity: 0;
+  }
+  &--hover {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+  }
+}
+
+/*
+// Product Content
+*/
+.product__content {
+  gap: 0;
+}
+.product__addon-title-price {
+  position: relative;
+  top: 0;
+  display: none;
+  padding: 0.3rem 1rem ;
+  border-radius: 0.4rem;
+  background-color: $secondary;
+  margin: 0.2rem 0;
+}
+
+
+
+
+
+
+
+/*
+// Product Variations
+*/
+// Product Color Variation
+.product__color-variation {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+// Product Lables
+.product__color-variation-label {
+  display: none;
+}
+$sofa-colors: (blue, dark-green, red, green, black, coffee);
+@each $sofa-color in $sofa-colors {
+  .product__color-variation:has(input[id="#{$sofa-color}"]:checked)
+    .product__color-variation-label[color="#{$sofa-color}"] {
+    display: block;
+  }
+}
+// Product inputs
+.product__color-variation__color-inputs {
+  position: relative;
+  display: flex;
+  gap: 1.5rem;
+}
+.product__color-variation__color-inputs input {
+  visibility: hidden;
+}
+$sofa-input-colors: (
+  "blue": rgb(14, 14, 201),
+  "dark-green": rgb(15, 128, 15),
+  "green": rgb(81, 187, 81),
+  "red": rgb(165, 11, 11),
+  "black": black,
+  "coffee": rgb(179, 113, 15),
+);
+@each $key, $val in $sofa-input-colors {
+  .product__color-variation__color-inputs input[id="#{$key}"]::before {
+    cursor: pointer;
+    display: block;
+    visibility: visible;
+    content: " ";
+    background: $val;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border: 1px solid transparent;
+  }
+}
+.product__color-variation__color-inputs input:checked::before {
+  box-shadow: inset 0px 0px 0px 1px white;
+}
+
+/*
+// Product Addons
+*/
+.product__addons-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  & input {
+    visibility: hidden;
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    &::before {
+      content: " ";
+      cursor: pointer;
+      display: block;
+      visibility: visible;
+      background: $white;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.2rem;
+      border: 1px solid $dark;
+    }
+    &:checked::before {
+      background: $dark;
+      box-shadow: inset 0px 0px 0px 2px white;
+    }
+  }
+}
+/*
+// Product Details
+*/
+.product-details__meta-wrapper {
+  border-bottom: 1px solid $grey;
+}
+.product-details__img-wrapper {
+  position: relative;
+}
+.product-details__img {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  max-width: 800px;
+  width: 100%;
+  z-index: 5;
+  transition: 1s ease-in-out all;
+  opacity: 1;
+  &:hover {
+    opacity: 0;
+  }
+  &--hover {
+    position: absolute;
+    z-index: 1;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,87 @@
+/* 
+----------------------------------------
+RESET
+----------------------------------------
+*/
+html{
+  font-size: 62.5%;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+body,
+main,
+header,
+footer,
+section {
+  width: 100%;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  font-style: italic;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*Links*/
+* {
+  transition: 0.4s all ease-in-out;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section, 
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/*
+Typography
+*/
+body {
+  font-family: 'Inter', sans-serif;
+}
+@each $key, $val in $font {
+  .text-#{$key} {
+    font-size: $val;
+  }
+}
+
+@each $key, $val in $weight {
+  .text-#{$key} {
+    font-weight: $val;
+  }
+}
+
+@media (max-width: 768px) {
+  @each $key, $val in $font-mobile {
+    .text-#{$key} {
+      font-size: $val;
+    }
+  }
+}
+
+.line-height-s {
+  line-height: 1.3;
+}
+.line-height-d {
+  line-height: 1;
+}
+
+.text-al-center{
+  text-align: center;
+}
+.text-al-left{
+  text-align: left;
+}
+.text-al-right{
+  text-align: right;
+}

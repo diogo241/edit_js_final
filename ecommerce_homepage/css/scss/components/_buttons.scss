@@ -1,0 +1,51 @@
+/* 
+----------------------------------------
+COMPONENTS
+----------------------------------------
+*/
+.btn {
+  display: inline-block;
+  padding: $space-xs $space-s;
+  font-size: $font-s;
+  font-weight: $font-w500;
+  text-transform: uppercase;
+  border-radius: $border-radius-m;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+//Button primary
+.btn-primary {
+  background-color: $primary;
+  color: $dark;
+  &:hover {
+    background-color: $primary-hover;
+    color: $dark;
+  }
+}
+//Button white
+.btn-white {
+  background-color: $white;
+  color: $dark;
+  &:hover {
+    background-color: rgba($white, 0.8);
+    color: $dark;
+  }
+}
+//Button transparent
+.btn-transparent {
+  background-color: transparent;
+  color: $dark;
+  padding: 0;
+  font-size: $font-s;
+  font-weight: $font-w600;
+  text-transform: uppercase;
+  border-radius: 0;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    background-color: transparent;
+    color: $dark--light;
+    border-bottom: 1px solid $dark--light;
+    padding: 0 0 0.5rem 0;
+  }
+}

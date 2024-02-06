@@ -1,0 +1,30 @@
+/* 
+----------------------------------------
+PRODUCT PAGE
+----------------------------------------
+*/
+// Product Benefits Card
+//Video
+.product-benefits-card__video {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+
+  @media (max-width: 768px) {
+    height: 40vh;
+  }
+}
+
+.product-benefits-card {
+    &__video-wrapper--order-1 {
+        order: 1;
+    }
+    &__video-wrapper--order-2 {
+        order: 2;
+    }
+}
+@media (max-width: 768px) {
+  .product-benefits-card--hide-mb {
+    display: none;
+  }
+}

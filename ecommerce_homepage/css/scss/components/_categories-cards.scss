@@ -1,0 +1,23 @@
+
+.categories__card-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+.categories__img {
+    position: relative;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    z-index: 0;
+}
+.categories__card-title{
+    position: relative;
+    z-index: 1;
+    bottom: 4rem;
+    padding: 0 $space-xs;
+}

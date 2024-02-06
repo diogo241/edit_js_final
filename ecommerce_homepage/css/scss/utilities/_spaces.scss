@@ -1,0 +1,64 @@
+/*
+Padding
+*/
+@each $key, $val in $space {
+  .pad-tb-#{$key} {
+    padding-top: $val;
+    padding-bottom: $val;
+  }
+  .pad-top-#{$key} {
+    padding-top: $val;
+  }
+  .pad-bot-#{$key} {
+    padding-bottom: $val;
+  }
+  .pad-rl-#{$key} {
+    padding: 0 $val;
+  }
+}
+
+/*
+Margin
+*/
+@each $key, $val in $space {
+  .margin-tb-#{$key} {
+    margin-top: $val;
+    margin-bottom: $val;
+  }
+  .margin-top-#{$key} {
+    margin-top: $val;
+  }
+  .margin-bot-#{$key} {
+    margin-bottom: $val;
+  }
+  .margin-rl-#{$key} {
+    margin: 0 $val;
+  }
+}
+
+@media (max-width: 768px) {
+  @each $key, $val in $space-mobile {
+    .margin-tb-#{$key} {
+      margin-top: $val;
+      margin-bottom: $val;
+    }
+    .margin-top-#{$key} {
+      margin-top: $val;
+    }
+    .margin-bot-#{$key} {
+      margin-bottom: $val;
+    }
+    .margin-rl-#{$key} {
+      margin: 0 $val;
+    }
+  }
+}
+
+/*
+Gap
+*/
+@each $key, $val in $space {
+  .gap-#{$key} {
+    gap: $val;
+  }
+}

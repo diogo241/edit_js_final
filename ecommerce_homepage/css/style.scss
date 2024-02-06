@@ -1,0 +1,33 @@
+//Reset
+@import "./scss/base/reset";
+
+//Base
+@import "./scss/abstracts/variables";
+
+
+//Utilities
+@import "./scss/utilities/layout";
+@import "./scss/utilities/border-radius";
+@import "./scss/utilities/colors";
+@import "./scss/utilities/img";
+@import "./scss/utilities/spaces";
+@import "./scss/utilities/typography";
+
+//Components
+@import "./scss/components/buttons";
+@import "./scss/components/products-grid";
+@import "./scss/components/categories-cards";
+@import "./scss/components/products-carrossel";
+@import "./scss/components/product-card";
+@import "./scss/components/instagram-carrossel";
+@import "./scss/components/product-benefits";
+@import "./scss/components/related-products-grid";
+
+//Layout
+@import "./scss/layout/footer";
+@import "./scss/layout/header";
+
+//Pages
+@import "./scss/pages/homepage";
+@import "./scss/pages/product-archive";
+@import "./scss/pages/product-page";

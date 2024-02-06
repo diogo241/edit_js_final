@@ -1,0 +1,105 @@
+/* 
+----------------------------------------
+UTILITIES
+----------------------------------------
+*/
+
+
+/*
+Layout
+*/
+
+//Containers
+.container {
+    max-width: $container;
+    // margin: 0 $space-xs;
+    padding: 0 $space-xs;
+    &--l {
+        // margin: 0 $space-xs;
+        padding: 0 $space-xs;
+        max-width: calc($container * 1.18);
+    }
+    &-fluid {
+        width: 100%;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+//Grid
+$gap: $space-m;
+$gap-md: $space-xs;
+$columns: 12;
+
+
+
+@for $i from 1 through $columns {
+	.col-lg-#{$i} {
+		width: calc(100% / $columns * $i - $gap);
+        flex-grow: 1;
+	}
+}
+
+@media screen and (max-width: 768px) {
+    @for $i from 1 through $columns {
+        .col-md-#{$i} {
+            width: calc(100% / $columns * $i - $gap-md);
+            flex-grow: 1;
+        }
+    }
+}
+
+
+
+// Flex
+.f-row {
+	display: flex;
+	gap: $gap;
+}
+.f-col {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}
+@media screen and (max-width: 768px) {
+    .f-row {
+        gap: $gap-md;
+    }
+    .f-col {
+        gap: $gap-md;
+    }
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.f-grow {
+    flex-grow: 1;
+}
+.f-justify-end {
+    justify-content: flex-end;
+}
+.f-justify-start {
+    justify-content: flex-start;
+}
+.f-justify-center {
+    justify-content: center;
+}
+.f-justify-space {
+    justify-content: space-between;
+}
+.f-align-end {
+    align-items: flex-end;
+}
+.f-align-start {
+    align-items: flex-start;
+}
+.f-align-center {
+    align-items: center;
+}
+.f-align-space {
+    align-items: space-between;
+}

@@ -1,0 +1,49 @@
+/* 
+----------------------------------------
+HEADER
+----------------------------------------
+*/
+
+// Nav logo
+.nav__logo {
+  max-width: 100px;
+}
+
+// Nav mobile
+.nav__mobile-toggle {
+    display: none;
+}
+
+@media (max-width: 767px) {
+  .nav__menu-wrapper {
+    display: none;
+        &[data-visible] {
+            display: flex;
+            position: absolute;
+            top: 5rem;
+            right: 4%;
+            width: 100%;
+            max-width: 30rem;
+            padding: $space-m ;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 16px 4px #00000012;
+            margin: 0 auto;
+            border-radius: $border-radius-l;
+                & .nav__link i {
+                    display: none;
+                }
+        }
+
+  }
+
+  .nav__mobile-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: $space-xxs;
+  }
+}

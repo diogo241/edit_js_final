@@ -1,0 +1,117 @@
+//Container Width
+$container: 1100px;
+
+// Colors
+$primary: rgb(252, 238, 110);
+$primary-hover: #F7EEE3;
+$secondary: #f7eee3;
+$dark: #131313;
+$dark--light: #514f4d;
+$grey: #9C9C9C;
+$white: #ffffff;
+
+$colors: (
+  "primary": $primary,
+  "primary-hover": $primary-hover,
+  "secondary": $secondary,
+  "dark": $dark,
+  "dark--light": $dark--light,
+  "grey": $grey,
+  "white": $white,
+);
+
+//Spacing
+$space-xxs: 0.8rem;
+$space-xs: 1.6rem;
+$space-s: 2.4rem;
+$space-m: 3.6rem;
+$space-l: 4.8rem;
+$space-xl: 6.4rem;
+$space-xxl: 7.2rem;
+$space-xxl: 8.4rem;
+
+$space: (
+  "xxs": $space-xxs,
+  "xs": $space-xs,
+  "s": $space-s,
+  "m": $space-m,
+  "l": $space-l,
+  "xl": $space-xl,
+  "xxl": $space-xxl,
+);
+
+
+$space-m-l: 3rem;
+$space-m-xl: 4rem;
+$space-m-xxl: 6rem;
+$space-m-xxxl: 7rem;
+
+$space-mobile: (
+  "l": $space-m-l,
+  "xl": $space-m-xl,
+  "xxl": $space-m-xxl,
+  "xxxl": $space-m-xxxl,
+);
+
+
+//Font Size
+$font-xs: 1.2rem;
+$font-s: 1.4rem;
+$font-m: 1.6rem;
+$font-l: 1.8rem;
+$font-xl: 2rem;
+$font-xxl: 2.8rem;
+$font-xxxl: 3.6rem;
+
+
+
+$font-m-xl: 1.6rem;
+$font-m-xxl: 2rem;
+$font-m-xxxl: 2.3rem;
+
+$font-mobile: (
+  "xl": $font-m-xl,
+  "xxl": $font-m-xxl,
+  "xxxl": $font-m-xxxl,
+);
+
+$font: (
+  "xs": $font-xs,
+  "s": $font-s,
+  "m": $font-m,
+  "l": $font-l,
+  "xl": $font-xl,
+  "xxl": $font-xxl,
+  "xxxl": $font-xxxl,
+);
+
+
+//Font Weight
+$font-w300: 300;
+$font-w400: 400;
+$font-w500: 500;
+$font-w600: 600;
+$font-w700: 700;
+
+$weight: (
+  "w300": $font-w300,
+  "w400": $font-w400,
+  "w500": $font-w500,
+  "w600": $font-w600,
+  "w700": $font-w700,
+);
+
+
+//Border Radius
+$border-radius-s: 0.2rem;
+$border-radius-m: 0.4rem;
+$border-radius-l: 0.8rem;
+
+$border: (
+  "s": $border-radius-s,
+  "m": $border-radius-m,
+  "l": $border-radius-l,
+);
+
+// Box shadow
+$box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 10%), 1px 1px 6px 0px rgb(0 0 0 / 10%);

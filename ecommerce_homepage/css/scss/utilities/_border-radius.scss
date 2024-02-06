@@ -1,0 +1,5 @@
+@each $key, $val in $border {
+    .border-radius-#{$key} {
+      border-radius: $val;
+    }
+  }

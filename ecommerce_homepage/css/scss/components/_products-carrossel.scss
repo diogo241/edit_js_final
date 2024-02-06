@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+.products-carrossel__wrapper {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    max-width: 100vw;
+}
+}
+
+.products-carrossel__card {
+    overflow: hidden;
+    position: relative;
+    height: 42rem;
+    @media (max-width: 768px) {
+        height: 20rem;
+        min-width: 120px;
+    }
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+
+.products-carrossel__img {
+    object-fit: cover;
+    height: 100%;
+}
